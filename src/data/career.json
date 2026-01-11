@@ -1,0 +1,41 @@
+{
+  "career": [
+    {
+      "name": "Amazon Web Services (AWS)",
+      "href": "https://aws.amazon.com",
+      "title": "Software Developer",
+      "logo": "/img/aws.png",
+      "start": "Jan 2024",
+      "description": [
+        "Add your key responsibilities and achievements at AWS here",
+        "Describe the technologies you work with and the impact of your work",
+        "Highlight any significant projects or accomplishments"
+      ]
+    },
+    {
+      "name": "Company Name",
+      "href": "https://example.com",
+      "title": "Software Engineer Intern",
+      "logo": "/img/placeholder-company.png",
+      "start": "Jun 2023",
+      "end": "Dec 2023",
+      "description": [
+        "Replace with your internship experience details",
+        "Add the technologies and frameworks you worked with",
+        "Mention key projects or contributions"
+      ]
+    },
+    {
+      "name": "Previous Company",
+      "href": "https://example.com",
+      "title": "Junior Developer",
+      "logo": "/img/placeholder-company2.png",
+      "start": "May 2022",
+      "end": "Aug 2022",
+      "description": [
+        "Add your previous work experience here",
+        "Describe your role and responsibilities"
+      ]
+    }
+  ]
+}

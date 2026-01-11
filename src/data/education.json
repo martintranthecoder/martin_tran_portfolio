@@ -1,0 +1,35 @@
+{
+  "education": [
+    {
+      "name": "San Jose State University (SJSU)",
+      "href": "https://www.sjsu.edu",
+      "title": "Bachelor of Science in Computer Science",
+      "logo": "/img/sjsu.png",
+      "start": "Aug 2020",
+      "end": "May 2024",
+      "description": [
+        "Add your major/degree details here",
+        "Include relevant coursework, honors, or achievements",
+        "Mention any leadership positions or clubs you were involved in"
+      ],
+      "links": [
+        {
+          "name": "University Website",
+          "href": "https://www.sjsu.edu",
+          "icon": "globe"
+        }
+      ]
+    },
+    {
+      "name": "Community College / High School",
+      "href": "https://example.edu",
+      "title": "Diploma / Associate Degree",
+      "logo": "/img/placeholder-school.png",
+      "start": "Aug 2016",
+      "end": "Jun 2020",
+      "description": [
+        "Add your previous education details here if applicable"
+      ]
+    }
+  ]
+}

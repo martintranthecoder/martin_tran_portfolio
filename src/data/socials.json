@@ -1,0 +1,19 @@
+{
+  "socials": [
+    {
+      "name": "LinkedIn",
+      "href": "https://linkedin.com/in/martintran",
+      "icon": "linkedin"
+    },
+    {
+      "name": "GitHub",
+      "href": "https://github.com/martintran",
+      "icon": "github"
+    },
+    {
+      "name": "Email",
+      "href": "mailto:martin.tran@example.com",
+      "icon": "mail"
+    }
+  ]
+}

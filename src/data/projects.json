@@ -1,0 +1,63 @@
+{
+  "projects": [
+    {
+      "name": "Project 1",
+      "description": "Description of your first project. Replace this with details about what the project does and its key features.",
+      "image": "/img/placeholder-project1.png",
+      "tags": [
+        "React",
+        "TypeScript",
+        "Node.js",
+        "PostgreSQL"
+      ],
+      "links": [
+        {
+          "name": "Website",
+          "href": "https://example.com",
+          "icon": "globe"
+        },
+        {
+          "name": "Source",
+          "href": "https://github.com/martintran/project1",
+          "icon": "github"
+        }
+      ]
+    },
+    {
+      "name": "Project 2",
+      "description": "Description of your second project. Add details about the technologies used and the problem it solves.",
+      "image": "/img/placeholder-project2.png",
+      "tags": [
+        "Python",
+        "FastAPI",
+        "Docker",
+        "AWS"
+      ],
+      "links": [
+        {
+          "name": "Source",
+          "href": "https://github.com/martintran/project2",
+          "icon": "github"
+        }
+      ]
+    },
+    {
+      "name": "Project 3",
+      "description": "Description of your third project. Highlight the key achievements and impact of this project.",
+      "image": "/img/placeholder-project3.png",
+      "tags": [
+        "Java",
+        "Spring Boot",
+        "MySQL",
+        "REST API"
+      ],
+      "links": [
+        {
+          "name": "Demo",
+          "href": "https://example.com/demo",
+          "icon": "globe"
+        }
+      ]
+    }
+  ]
+}

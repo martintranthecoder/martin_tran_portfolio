@@ -1,0 +1,19 @@
+{
+  "introduction": {
+    "greeting": "Hi, I'm Martin Tran 👋",
+    "description": "Hello, it's me, Martin Tran. I'm a Software Developer at Amazon Web Services (AWS) and a SJSU alumni. Nice to meet you all, and thank you for checking this out.",
+    "escalation": {
+      "text": "For more information, please visit my",
+      "linkText": "Contact Page",
+      "suffix": "."
+    }
+  },
+  "escalationLink": {
+    "href": "/contact",
+    "title": "contact"
+  },
+  "metadata": {
+    "lastUpdated": "2026-01-11",
+    "version": "1.0.0"
+  }
+}
