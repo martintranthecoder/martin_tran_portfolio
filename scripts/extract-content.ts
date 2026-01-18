@@ -44,71 +44,6 @@ function extractHomepageContent(): ContentChunk[] {
   ];
 }
 
-/**
- * Extract privacy policy content from Markdown
- */
-function extractPrivacyPageContent(): ContentChunk[] {
-  const filePath = path.join(process.cwd(), "src/data/privacy.md");
-  const content = fs.readFileSync(filePath, "utf-8");
-
-  // Extract content from markdown, removing markdown syntax
-  const cleanContent = content
-    .replace(/#{1,6}\s/g, "") // Remove markdown headers
-    .replace(/\*\*(.*?)\*\*/g, "$1") // Remove bold
-    .replace(/\*(.*?)\*/g, "$1") // Remove italic
-    .replace(/\[(.*?)\]\(.*?\)/g, "$1") // Remove links
-    .replace(/\n+/g, " ") // Replace newlines with spaces for better flow
-    .replace(/\s+/g, " ") // Normalize whitespace
-    .trim();
-
-  // Create semantic sections instead of arbitrary paragraphs
-  const sections = [
-    {
-      title: "Portfolio site privacy policy",
-      content: cleanContent,
-    },
-  ];
-
-  return sections.map((section) => ({
-    slug: "/privacy",
-    title: section.title,
-    content: section.content,
-    metadata: {
-      contentType: "page",
-      enrichment: [
-        "This page contains the privacy policy for my portfolio website",
-        "I explain how user data is handled and protected on this site",
-        "The privacy policy covers data protection and user rights",
-        "This document outlines the terms and conditions for using my website",
-        "I describe my approach to data privacy and security",
-      ],
-    },
-  }));
-}
-
-/**
- * Extract blog page route information
- */
-function extractBlogPageContent(): ContentChunk[] {
-  return [
-    {
-      slug: "/blog",
-      title: "Blog Information",
-      content:
-        "Blog posts are handled separately by the backend RAG system. Posts cover technical topics, project updates, and personal insights. Chatbot can direct visitors to specific blog post URLs. All blog content is available for embedding via TACOS backend system.",
-      metadata: {
-        contentType: "page",
-        enrichment: [
-          "This is my blog page with technical articles and project updates",
-          "I write blog posts about technical topics and personal insights",
-          "My blog content is integrated with the TACOS backend system",
-          "You can find my technical writing and tutorials here",
-          "The blog showcases my project updates and development experiences",
-        ],
-      },
-    },
-  ];
-}
 
 /**
  * Extract structured data from projects JSON
@@ -304,12 +239,11 @@ function extractNavigationContent(): ContentChunk[] {
       metadata: {
         contentType: "navigation",
         enrichment: [
-          "This website has navigation to different sections like projects, blog, and contact",
+          "This website has navigation to different sections like projects and contact",
           "You can navigate to my projects page to see my work",
-          "The blog section contains my technical articles and updates",
           "There's a contact page for getting in touch with me",
-          "The site structure includes homepage, projects, blog, and contact sections",
-          "You can find my resume and privacy policy through the navigation",
+          "The site structure includes homepage, projects, and contact sections",
+          "You can find my resume through the navigation",
         ],
       },
     },
@@ -322,8 +256,6 @@ function extractNavigationContent(): ContentChunk[] {
 function extractAllContent(): ExtractedContent {
   const contentChunks: ContentChunk[] = [
     ...extractHomepageContent(),
-    ...extractPrivacyPageContent(),
-    ...extractBlogPageContent(),
     ...extractProjectsData(),
     ...extractCareerData(),
     ...extractEducationData(),

@@ -1,0 +1,44 @@
+{
+  "tracks": [
+    {
+      "id": "1",
+      "name": "Example Track 1",
+      "artist": "Example Artist",
+      "albumArt": "https://via.placeholder.com/300",
+      "duration": "3:24",
+      "url": "https://open.spotify.com"
+    },
+    {
+      "id": "2",
+      "name": "Example Track 2",
+      "artist": "Example Artist",
+      "albumArt": "https://via.placeholder.com/300",
+      "duration": "2:56",
+      "url": "https://open.spotify.com"
+    },
+    {
+      "id": "3",
+      "name": "Example Track 3",
+      "artist": "Example Artist",
+      "albumArt": "https://via.placeholder.com/300",
+      "duration": "4:12",
+      "url": "https://open.spotify.com"
+    },
+    {
+      "id": "4",
+      "name": "Example Track 4",
+      "artist": "Example Artist",
+      "albumArt": "https://via.placeholder.com/300",
+      "duration": "3:45",
+      "url": "https://open.spotify.com"
+    },
+    {
+      "id": "5",
+      "name": "Example Track 5",
+      "artist": "Example Artist",
+      "albumArt": "https://via.placeholder.com/300",
+      "duration": "3:01",
+      "url": "https://open.spotify.com"
+    }
+  ]
+}

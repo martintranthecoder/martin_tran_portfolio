@@ -46,3 +46,17 @@ export type Experience = z.infer<typeof experience>;
 export const careerSchema = z.object({ career: z.array(experience) });
 export const educationSchema = z.object({ education: z.array(experience) });
 export const socialSchema = z.object({ socials: z.array(iconLink) });
+
+const spotifyTrack = z.object({
+  id: z.string(),
+  name: z.string(),
+  artist: z.string(),
+  albumArt: z.string().url(),
+  duration: z.string(),
+  url: z.string().url(),
+});
+export type SpotifyTrack = z.infer<typeof spotifyTrack>;
+
+export const spotifyTracksSchema = z.object({
+  tracks: z.array(spotifyTrack),
+});

@@ -5,6 +5,7 @@ import { cn } from "@/lib/utils";
 import { animate, motion, useMotionValue, useTransform } from "framer-motion";
 import { RefreshCw } from "lucide-react";
 import { Dispatch, SetStateAction, useState } from "react";
+import Image from "next/image";
 
 interface SwipeCardsProps {
   className?: string;
@@ -79,10 +80,8 @@ const Card = ({
   };
 
   return (
-    <motion.img
-      src={url}
-      alt="Placeholder alt"
-      className="absolute h-[233px] w-[175px] origin-bottom rounded-lg bg-white object-cover hover:cursor-grab active:cursor-grabbing"
+    <motion.div
+      className="absolute h-[233px] w-[175px] origin-bottom rounded-lg overflow-hidden hover:cursor-grab active:cursor-grabbing"
       style={{
         gridRow: 1,
         gridColumn: 1,
@@ -104,7 +103,17 @@ const Card = ({
         bottom: 0,
       }}
       onDragEnd={handleDragEnd}
-    />
+    >
+      <Image
+        src={url}
+        alt="Martin Tran"
+        fill
+        className="object-cover pointer-events-none"
+        quality={95}
+        priority={isFront}
+        draggable={false}
+      />
+    </motion.div>
   );
 };
 
@@ -118,14 +127,14 @@ type Card = {
 const cardData: Card[] = [
   {
     id: 1,
-    url: "/img/ted-2019.jpg",
+    url: "/img/martin-2024.jpg",
   },
   {
     id: 2,
-    url: "/img/ted-2024.jpg",
+    url: "/img/martin-2025.jpg",
   },
   {
     id: 3,
-    url: "/img/ted.jpg",
+    url: "/img/martin.jpg",
   },
 ];

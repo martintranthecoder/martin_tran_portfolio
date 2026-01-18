@@ -1,11 +1,11 @@
 {
-  "name": "Ted Thoughts.",
-  "short_name": "tedawf.com",
+  "name": "Martin Tran",
+  "short_name": "martintran.com",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#ffffff",
-  "description": "My personal site to showcase my developer work and opinions.",
+  "description": "Martin Tran's portfolio website showcasing projects and skills.",
   "icons": [
     {
       "src": "/icon-192.png",

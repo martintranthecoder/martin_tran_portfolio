@@ -1,4 +1,5 @@
 import Footer from "@/components/Footer";
+import GoogleAnalytics from "@/components/GoogleAnalytics";
 import Header from "@/components/Header";
 import Providers from "@/components/Providers";
 import { cn } from "@/lib/utils";
@@ -18,8 +19,8 @@ const calistoga = Calistoga({
 });
 
 export const metadata: Metadata = {
-  title: "Ted Thoughts.",
-  description: "My personal site to showcase my developer work and opinions.",
+  title: "Martin Tran - Portfolio",
+  description: "Martin Tran's portfolio - Software Developer at AWS",
   icons: {
     icon: [
       { url: "/favicon.ico" },
@@ -44,6 +45,7 @@ export default function RootLayout({
           calistoga.variable,
         )}
       >
+        <GoogleAnalytics />
         <Providers>
           <Header />
           <div className="mx-auto flex max-w-3xl flex-col px-8">

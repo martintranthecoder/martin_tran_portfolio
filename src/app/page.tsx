@@ -2,6 +2,7 @@ import Experience from "@/components/Experience";
 import LinkWithIcon from "@/components/LinkWithIcon";
 import Projects from "@/components/Projects";
 import Socials from "@/components/Socials";
+import SpotifyTopTracks from "@/components/SpotifyTopTracks";
 import SwipeCards from "@/components/SwipeCards";
 import { Button } from "@/components/ui/Button";
 import {
@@ -68,6 +69,11 @@ export default function Home() {
           />
         </div>
         <Projects limit={LIMIT} />
+      </section>
+
+      <section className="flex flex-col gap-8">
+        <h2 className="title text-2xl sm:text-3xl">now playing</h2>
+        <SpotifyTopTracks />
       </section>
 
     </article>
