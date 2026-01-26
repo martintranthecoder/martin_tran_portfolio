@@ -3,38 +3,53 @@
     {
       "name": "Amazon Web Services (AWS)",
       "href": "https://aws.amazon.com",
-      "title": "Software Developer",
       "logo": "/img/aws.png",
-      "start": "Jan 2024",
-      "description": [
-        "Add your key responsibilities and achievements at AWS here",
-        "Describe the technologies you work with and the impact of your work",
-        "Highlight any significant projects or accomplishments"
+      "positions": [
+        {
+          "title": "Software Engineer",
+          "start": "Jul 2026",
+          "description": [
+            "incoming..."
+          ]
+        },
+        {
+          "title": "Software Engineer Intern",
+          "start": "May 2025",
+          "end": "Aug 2025",
+          "description": [
+            "Authored a detailed technical design document outlining CI/CD architecture and API integration strategy; received positive feedback from 4+ senior engineers and managers for clarity, scalability, and alignment with team goals",
+            "Designed and implemented a CI/CD pipeline feature to streamline deployment workflows for Amazon developers, improving release reliability and reducing manual effort",
+            "Delivered a production-ready full-stack service adopted by Amazon developers, improving developer productivity and accelerating iteration cycles through a React/TypeScript dashboard by displaying the hidden policies",
+            "Partnered with 10+ engineers across agile sprints, contributing to design reviews, code reviews, and stand-ups to ensure feature alignment with team-wide technical goals",
+            "Implemented comprehensive unit and integration tests across all features, achieving 90%+ code coverage and strengthening reliability in production environments"
+          ]
+        }
       ]
     },
     {
-      "name": "Company Name",
-      "href": "https://example.com",
-      "title": "Software Engineer Intern",
-      "logo": "/img/placeholder-company.png",
-      "start": "Jun 2023",
-      "end": "Dec 2023",
-      "description": [
-        "Replace with your internship experience details",
-        "Add the technologies and frameworks you worked with",
-        "Mention key projects or contributions"
-      ]
-    },
-    {
-      "name": "Previous Company",
-      "href": "https://example.com",
-      "title": "Junior Developer",
-      "logo": "/img/placeholder-company2.png",
-      "start": "May 2022",
-      "end": "Aug 2022",
-      "description": [
-        "Add your previous work experience here",
-        "Describe your role and responsibilities"
+      "name": "SJSU Peer Connections",
+      "href": "https://www.sjsu.edu/peerconnections/index.php",
+      "logo": "/img/peer_connections_logo.png",
+      "positions": [
+        {
+          "title": "Embedded Tutor",
+          "start": "Aug 2025",
+          "description": [
+            "Supporting in-class lecture for CS 149 by circulating during classes, assisting students with questions on challenging operating system concepts",
+            "Providing one-on-one guidance in C and Unix/Linux system calls, improving students debugging and problem-solving skills",
+            "Assisting 400+ students across a wide range of subjects, including CS, Math, Physics, and Computer Engineering, explaining concepts, guiding problem-solving, and preparing students for upcoming exams, and having the highest average utilization rate of 89.41% and the highest number of total appointments of 437 appointments",
+            "Coordinating closely with the embedded professor to enhance student learning, clarify difficult topics, and ensure a strong understanding of CS 149 concepts"
+          ]
+        },
+        {
+          "title": "Learning Assistant",
+          "start": "Jan 2025",
+          "end": "June 2022",
+          "description": [
+            "Supported students in a big lecture hall of 200+ people by facilitating weekly small-group, in-class activities that improved engagement and conceptual understanding",
+            "Delivered weekly insights on student performance and participation, helping faculty tailor instruction to meet evolving classroom needs"
+          ]
+        }
       ]
     }
   ]

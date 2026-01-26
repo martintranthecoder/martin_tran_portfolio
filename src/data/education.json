@@ -3,32 +3,40 @@
     {
       "name": "San Jose State University (SJSU)",
       "href": "https://www.sjsu.edu",
-      "title": "Bachelor of Science in Computer Science",
-      "logo": "/img/sjsu.png",
-      "start": "Aug 2020",
-      "end": "May 2024",
-      "description": [
-        "Add your major/degree details here",
-        "Include relevant coursework, honors, or achievements",
-        "Mention any leadership positions or clubs you were involved in"
-      ],
-      "links": [
+      "logo": "/img/sjsu.svg",
+      "positions": [
         {
-          "name": "University Website",
-          "href": "https://www.sjsu.edu",
-          "icon": "globe"
+          "title": "Bachelor of Science in Computer Software Engineering",
+          "start": "Aug 2023",
+          "end": "May 2026",
+          "description": [
+            "Activities: Software and Computer Engineering Society (SCE), Science Extravaganza (SE), MESA Club",
+            "Relevant Coursework: Java Programming, Object-Oriented Design, Database Management, Data Structures & Algorithms, Computer Networks, Operating Systems, Machine Learning, Programming Paradigms, Distributed Systems"
+          ],
+          "links": [
+            {
+              "name": "Department Website",
+              "href": "https://www.sjsu.edu/cmpe/index.php",
+              "icon": "globe"
+            }
+          ]
         }
       ]
     },
     {
-      "name": "Community College / High School",
-      "href": "https://example.edu",
-      "title": "Diploma / Associate Degree",
-      "logo": "/img/placeholder-school.png",
-      "start": "Aug 2016",
-      "end": "Jun 2020",
-      "description": [
-        "Add your previous education details here if applicable"
+      "name": "De Anza College",
+      "href": "https://www.deanza.edu",
+      "logo": "/img/de-anza.jpeg",
+      "positions": [
+        {
+          "title": "Associate of Science in Computer Science",
+          "start": "Jan 2022",
+          "end": "Jun 2023",
+          "description": [
+            "Grade: 3.82",
+            "Activities: De Anza Student Government (DASG) Officer"
+          ]
+        }
       ]
     }
   ]

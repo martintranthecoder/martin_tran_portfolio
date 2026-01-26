@@ -2,11 +2,11 @@
 
 import Image from "next/image";
 import { Card, CardContent } from "./ui/Card";
-import { SpotifyTrack } from "@/lib/schemas";
+import { MusicTrack } from "@/lib/schemas";
 import { Play } from "lucide-react";
 
 interface SpotifyTrackCardProps {
-  track: SpotifyTrack;
+  track: MusicTrack;
   isFeatured?: boolean;
 }
 

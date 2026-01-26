@@ -2,11 +2,6 @@
 
 A clean, minimal portfolio website built with Next.js, Tailwind CSS, and Shadcn UI. Features an email contact form and project showcase.
 
-## Live Demo
-
-🌐 Coming soon!
-
-![Portfolio Screenshot](public/img/portfolio-screenshot.png)
 
 ## Features
 
@@ -36,19 +31,6 @@ cp .env.example .env.local
 # add your API keys to .env.local
 npm run dev
 ```
-
-## Environment Variables
-
-See .env.example
-
-## Customization
-
-- Update personal info in `src/data/*.json`
-- Replace projects in `src/data/projects.json`
-- Add your work experience in `src/data/career.json`
-- Add your education in `src/data/education.json`
-- Replace your resume with `public/resume.pdf`
-- Update social links in `src/data/socials.json`
 
 ## Deployment
 

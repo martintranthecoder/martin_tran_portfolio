@@ -25,21 +25,27 @@ const project = z.object({
   description: z.string(),
   href: z.string().url().optional(),
   image: z.string().optional(),
+  status: z.enum(["Completed", "In Development"]).optional(),
   tags: z.array(z.string()),
   links: z.array(iconLink),
 });
 export const projectSchema = z.object({ projects: z.array(project) });
 export type Project = z.infer<typeof project>;
 
-const experience = z.object({
-  name: z.string(),
-  href: z.string(),
+const position = z.object({
   title: z.string(),
-  logo: z.string(),
   start: z.string(),
   end: z.string().optional(),
   description: z.array(z.string()).optional(),
   links: z.array(iconLink).optional(),
+});
+export type Position = z.infer<typeof position>;
+
+const experience = z.object({
+  name: z.string(),
+  href: z.string(),
+  logo: z.string(),
+  positions: z.array(position),
 });
 export type Experience = z.infer<typeof experience>;
 
@@ -47,7 +53,7 @@ export const careerSchema = z.object({ career: z.array(experience) });
 export const educationSchema = z.object({ education: z.array(experience) });
 export const socialSchema = z.object({ socials: z.array(iconLink) });
 
-const spotifyTrack = z.object({
+const musicTrack = z.object({
   id: z.string(),
   name: z.string(),
   artist: z.string(),
@@ -55,8 +61,8 @@ const spotifyTrack = z.object({
   duration: z.string(),
   url: z.string().url(),
 });
-export type SpotifyTrack = z.infer<typeof spotifyTrack>;
+export type MusicTrack = z.infer<typeof musicTrack>;
 
-export const spotifyTracksSchema = z.object({
-  tracks: z.array(spotifyTrack),
+export const musicTracksSchema = z.object({
+  tracks: z.array(musicTrack),
 });

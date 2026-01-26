@@ -1,6 +1,6 @@
 "use server";
 
-import ContactFormEmail from "@/components/email/ContactFormEmail";
+// import ContactFormEmail from "@/components/email/ContactFormEmail";
 import { Resend } from "resend";
 import { z } from "zod";
 import { ContactFormSchema } from "./schemas";
@@ -21,7 +21,7 @@ export async function sendEmail(data: ContactFormInputs) {
     const { data, error } = await resend.emails.send({
       // TODO: Update the email address and name below
       from: `Martin Tran Portfolio <contact@yourdomain.com>`,
-      to: "your-email@example.com",
+      to: "martintran3003.work@gmail.com",
       replyTo: [email],
       cc: [email],
       subject: `New message from ${name}!`,

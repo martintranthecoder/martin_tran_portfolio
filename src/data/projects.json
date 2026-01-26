@@ -1,14 +1,17 @@
 {
   "projects": [
     {
-      "name": "Project 1",
-      "description": "Description of your first project. Replace this with details about what the project does and its key features.",
-      "image": "/img/placeholder-project1.png",
+      "name": "Reinforcement-Learning-based CAPTCHA System",
+      "description": "Trying to break current systems using reinforcement learning techniques and proposing a novel CAPTCHA system that adapts to user behavior using both classfication and reinforcement learning models to detect bots.",
+      "status": "In Development",
+      "image": "/img/captcha.png",
       "tags": [
         "React",
         "TypeScript",
-        "Node.js",
-        "PostgreSQL"
+        "MySQL",
+        "Reinforcement Learning",
+        "TensorFlow",
+        "more"
       ],
       "links": [
         {
@@ -24,38 +27,134 @@
       ]
     },
     {
-      "name": "Project 2",
-      "description": "Description of your second project. Add details about the technologies used and the problem it solves.",
-      "image": "/img/placeholder-project2.png",
+      "name": "Martin's Portfolio Website",
+      "description": "My personal portfolio",
+      "status": "Completed",
+      "image": "/img/martin-portfolio.png",
       "tags": [
-        "Python",
-        "FastAPI",
-        "Docker",
-        "AWS"
+        "React",
+        "TypeScript",
+        "Next.js",
+        "Tailwind CSS",
+        "Shadcn UI",
+        "Vercel"
       ],
       "links": [
         {
+          "name": "Website",
+          "href": "https://github.com/martintranthecoder/martin_tran_portfolio",
+          "icon": "globe"
+        },
+        {
           "name": "Source",
-          "href": "https://github.com/martintran/project2",
+          "href": "https://github.com/martintranthecoder/martin_tran_portfolio",
           "icon": "github"
         }
       ]
     },
     {
-      "name": "Project 3",
-      "description": "Description of your third project. Highlight the key achievements and impact of this project.",
-      "image": "/img/placeholder-project3.png",
+      "name": "Spam Email Classification",
+      "description": "Classifying spam emails using BERT transformer and natural language processing techniques to improve accuracy and efficiency in email filtering",
+      "status": "Completed",
+      "image": "/img/spam.png",
       "tags": [
-        "Java",
-        "Spring Boot",
-        "MySQL",
-        "REST API"
+        "Python",
+        "PyTorch",
+        "Hugging Face",
+        "scikit-learn",
+        "NLTK",
+        "Transformers"
       ],
       "links": [
         {
-          "name": "Demo",
-          "href": "https://example.com/demo",
-          "icon": "globe"
+          "name": "Source",
+          "href": "https://colab.research.google.com/drive/1OuEiSEsrI_VkisO2kW9jcfNS1sf4lFkx?usp=sharing",
+          "icon": "code"
+        },
+        {
+          "name": "Paper",
+          "href": "https://drive.google.com/file/d/1ljYAIp3FHHvNlrrzU9hYcotgcVXkucn4/view",
+          "icon": "file-text"
+        }
+      ]
+    },
+    {
+      "name": "MonkeyType CLI",
+      "description": "CLI version of MonkeyType, a popular typing test application",
+      "status": "In Development",
+      "image": "",
+      "tags": [
+        "Rust",
+        "rataui",
+        "CLI",
+        "Terminal"
+      ],
+      "links": [
+        {
+          "name": "Source",
+          "href": "https://github.com/martintran/project1",
+          "icon": "github"
+        }
+      ]
+    },
+    {
+      "name": "R.I.C.E Project",
+      "description": "Finanacial budgeting website specially designed for college students to help them manage their expenses, savings and loans effectively",
+      "status": "Completed",
+      "image": "/img/rice.png",
+      "tags": [
+        "Python",
+        "Flask",
+        "React",
+        "JavaScript",
+        "PostgreSQL",
+        "Supabase",
+        "Tailwind CSS"
+      ],
+      "links": [
+        {
+          "name": "Source",
+          "href": "https://github.com/MatthewTran22/CMPE133-Project-R.I.C.E",
+          "icon": "github"
+        }
+      ]
+    },
+    {
+      "name": "Sort Your Life",
+      "description": "Your personal asset manager",
+      "status": "Completed",
+      "image": "/img/syl.png",
+      "tags": [
+        "Java",
+        "JavaFX",
+        "SQLite",
+        "App Development",
+        "UI/UX Design"
+      ],
+      "links": [
+        {
+          "name": "Source",
+          "href": "https://github.com/martintranthecoder/SortYourLife",
+          "icon": "github"
+        }
+      ]
+    },
+    {
+      "name": "Noter",
+      "description": "A simple note-taking web application to organize and manage your notes efficiently",
+      "status": "Completed",
+      "image": "/img/noter.png",
+      "tags": [
+        "Python",
+        "Flask",
+        "HTML",
+        "CSS"
+      ],
+      "links": [
+        {
+          "name": "Source",
+          "href": "https://github.com/MatthewTran22/CMPE133-Project-R.I.C.E",
+          "icon": "github"
         }
       ]
     }

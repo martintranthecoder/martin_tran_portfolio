@@ -4,6 +4,7 @@ import Projects from "@/components/Projects";
 import Socials from "@/components/Socials";
 import SpotifyTopTracks from "@/components/SpotifyTopTracks";
 import SwipeCards from "@/components/SwipeCards";
+import { featureFlags } from "@/lib/featureFlags";
 import { Button } from "@/components/ui/Button";
 import {
   ArrowRightIcon,
@@ -18,7 +19,7 @@ const LIMIT = 2; // max show 2
 export default function Home() {
 
   return (
-    <article className="mt-8 flex flex-col gap-16 pb-16">
+      <article className="mt-8 flex flex-col gap-16 pb-16">
       <section className="flex flex-col items-start gap-8 md:flex-row-reverse md:items-center md:justify-between">
         <SwipeCards className="md:mr-8" />
 
@@ -27,9 +28,26 @@ export default function Home() {
             {homeContent.introduction.greeting}
           </h1>
 
-          <p className="mt-4 max-w-sm text-balance text-sm sm:text-base">
-            {homeContent.introduction.description}
-          </p>
+          <div className="mt-4 max-w-sm text-balance text-sm sm:text-base space-y-2">
+            <p>{homeContent.introduction.description.title}</p>
+            <p>
+              {homeContent.introduction.description.interest}{" "}
+              {homeContent.introduction.description.areas.map((area, index) => (
+                <span key={area}>
+                  <span className="font-semibold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+                    {area}
+                  </span>
+                  {index < homeContent.introduction.description.areas.length - 1 && (
+                    <span>{index === homeContent.introduction.description.areas.length - 2 ? " & " : ", "}</span>
+                  )}
+                </span>
+              ))}
+              .
+            </p>
+            <p className="text-muted-foreground">
+              {homeContent.introduction.description.greeting}
+            </p>
+          </div>
 
           <p className="mt-4 text-xs font-light">
             {homeContent.introduction.escalation.text}
@@ -71,10 +89,12 @@ export default function Home() {
         <Projects limit={LIMIT} />
       </section>
 
-      <section className="flex flex-col gap-8">
-        <h2 className="title text-2xl sm:text-3xl">now playing</h2>
-        <SpotifyTopTracks />
-      </section>
+      {featureFlags.spotify && (
+        <section className="flex flex-col gap-8">
+          <h2 className="title text-2xl sm:text-3xl">now playing</h2>
+          <SpotifyTopTracks />
+        </section>
+      )}
 
     </article>
   );

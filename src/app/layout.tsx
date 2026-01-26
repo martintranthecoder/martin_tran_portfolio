@@ -2,6 +2,8 @@ import Footer from "@/components/Footer";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
 import Header from "@/components/Header";
 import Providers from "@/components/Providers";
+import ClickSpark from "@/components/ui/ClickSpark";
+import FloatingJellyfish from "@/components/ui/FloatingJellyfish";
 import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
 import { Calistoga, Inter } from "next/font/google";
@@ -47,11 +49,20 @@ export default function RootLayout({
       >
         <GoogleAnalytics />
         <Providers>
-          <Header />
-          <div className="mx-auto flex max-w-3xl flex-col px-8">
-            <main className="grow">{children}</main>
-          </div>
-          <Footer />
+          <FloatingJellyfish />
+          <ClickSpark
+            sparkColor="#fff"
+            sparkSize={10}
+            sparkRadius={15}
+            sparkCount={8}
+            duration={400}
+          >
+            <Header />
+            <div className="mx-auto flex max-w-3xl flex-col px-8">
+              <main className="grow">{children}</main>
+            </div>
+            <Footer />
+          </ClickSpark>
         </Providers>
       </body>
     </html>

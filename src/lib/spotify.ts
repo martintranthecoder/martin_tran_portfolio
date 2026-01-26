@@ -1,7 +1,6 @@
 "use server";
 
-import { spotifyTracksSchema, SpotifyTrack } from "./schemas";
-import fallbackData from "@/data/spotify-fallback.json";
+import { musicTracksSchema, MusicTrack } from "./schemas";
 
 const SPOTIFY_CLIENT_ID = process.env.SPOTIFY_CLIENT_ID;
 const SPOTIFY_CLIENT_SECRET = process.env.SPOTIFY_CLIENT_SECRET;
@@ -78,7 +77,7 @@ function formatDuration(durationMs: number): string {
 /**
  * Fetch top tracks from Spotify API
  */
-export async function getTopTracks(): Promise<SpotifyTrack[]> {
+export async function getTopTracks(): Promise<MusicTrack[]> {
   try {
     const accessToken = await getAccessToken();
 
@@ -99,7 +98,7 @@ export async function getTopTracks(): Promise<SpotifyTrack[]> {
     const data = await response.json();
 
     // Transform Spotify API response to our schema
-    const tracks: SpotifyTrack[] = data.items.map((item: any) => ({
+    const tracks: MusicTrack[] = data.items.map((item: any) => ({
       id: item.id,
       name: item.name,
       artist: item.artists[0].name,
@@ -109,13 +108,12 @@ export async function getTopTracks(): Promise<SpotifyTrack[]> {
     }));
 
     // Validate with Zod schema
-    const validated = spotifyTracksSchema.parse({ tracks });
+    const validated = musicTracksSchema.parse({ tracks });
     return validated.tracks;
   } catch (error) {
     console.error("Error fetching Spotify top tracks:", error);
 
-    // Return fallback data if API fails
-    const validated = spotifyTracksSchema.parse(fallbackData);
-    return validated.tracks;
+    // Return empty array if API fails (Spotify feature is currently disabled)
+    return [];
   }
 }
