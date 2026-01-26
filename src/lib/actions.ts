@@ -20,7 +20,7 @@ export async function sendEmail(data: ContactFormInputs) {
     const { name, email, message } = result.data;
     const { data, error } = await resend.emails.send({
       // TODO: Update the email address and name below
-      from: `Martin Tran Portfolio <contact@yourdomain.com>`,
+      from: `Martin Tran Portfolio <contact@martintran.work>`,
       to: "martintran3003.work@gmail.com",
       replyTo: [email],
       cc: [email],
