@@ -1,0 +1,137 @@
+{
+  "travels": [
+    {
+      "id": 1,
+      "city": "San Jose",
+      "country": "USA",
+      "coordinates": [-121.8863, 37.3382],
+      "current": true
+    },
+    {
+      "id": 2,
+      "city": "San Francisco",
+      "country": "USA",
+      "coordinates": [-122.4194, 37.7749]
+    },
+    {
+      "id": 3,
+      "city": "Los Angeles",
+      "country": "USA",
+      "coordinates": [-118.2437, 34.0522]
+    },
+    {
+      "id": 4,
+      "city": "Seattle",
+      "country": "USA",
+      "coordinates": [-122.3321, 47.6062]
+    },
+    {
+      "id": 5,
+      "city": "Colorado",
+      "country": "USA",
+      "coordinates": [-104.9903, 39.7392]
+    },
+    {
+      "id": 6,
+      "city": "Tokyo",
+      "country": "Japan",
+      "coordinates": [139.6917, 35.6895]
+    },
+    {
+      "id": 7,
+      "city": "Kyoto",
+      "country": "Japan",
+      "coordinates": [135.7681, 35.0116]
+    },
+    {
+      "id": 8,
+      "city": "Shizuoka",
+      "country": "Japan",
+      "coordinates": [138.3831, 34.9756]
+    },
+    {
+      "id": 9,
+      "city": "Seoul",
+      "country": "South Korea",
+      "coordinates": [126.9780, 37.5665]
+    },
+    {
+      "id": 10,
+      "city": "Jeju",
+      "country": "South Korea",
+      "coordinates": [126.5312, 33.4996]
+    },
+    {
+      "id": 11,
+      "city": "Taipei",
+      "country": "Taiwan",
+      "coordinates": [121.5654, 25.0330]
+    },
+    {
+      "id": 12,
+      "city": "Ho Chi Minh City",
+      "country": "Vietnam",
+      "coordinates": [106.6297, 10.8231]
+    },
+    {
+      "id": 13,
+      "city": "Hanoi",
+      "country": "Vietnam",
+      "coordinates": [105.8342, 21.0278]
+    },
+    {
+      "id": 14,
+      "city": "Da Nang",
+      "country": "Vietnam",
+      "coordinates": [108.2022, 16.0544]
+    },
+    {
+      "id": 15,
+      "city": "Bangkok",
+      "country": "Thailand",
+      "coordinates": [100.5018, 13.7563]
+    },
+    {
+      "id": 16,
+      "city": "Singapore",
+      "country": "Singapore",
+      "coordinates": [103.8198, 1.3521]
+    },
+    {
+      "id": 17,
+      "city": "Kuala Lumpur",
+      "country": "Malaysia",
+      "coordinates": [101.6869, 3.1390]
+    },
+    {
+      "id": 18,
+      "city": "George Town",
+      "country": "Malaysia",
+      "coordinates": [100.3327, 5.4141]
+    },
+    {
+      "id": 19,
+      "city": "Cebu",
+      "country": "Philippines",
+      "coordinates": [123.8854, 10.3157]
+    },
+    {
+      "id": 20,
+      "city": "El Nido",
+      "country": "Philippines",
+      "coordinates": [119.3925, 11.1940]
+    },
+    {
+      "id": 21,
+      "city": "Coron",
+      "country": "Philippines",
+      "coordinates": [120.2043, 11.9986]
+    },
+    {
+      "id": 22,
+      "city": "Palawan",
+      "country": "Philippines",
+      "coordinates": [118.7356, 9.8500]
+    }
+  ]
+}

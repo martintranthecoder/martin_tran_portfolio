@@ -4,6 +4,7 @@ import Projects from "@/components/Projects";
 import Socials from "@/components/Socials";
 import SpotifyTopTracks from "@/components/SpotifyTopTracks";
 import SwipeCards from "@/components/SwipeCards";
+import TravelMap from "@/components/TravelMap";
 import { featureFlags } from "@/lib/featureFlags";
 import { Button } from "@/components/ui/Button";
 import {
@@ -75,6 +76,11 @@ export default function Home() {
       </section>
 
       <Experience />
+
+      <section className="flex flex-col gap-8">
+        <h2 className="title text-2xl sm:text-3xl">where i&apos;ve been</h2>
+        <TravelMap />
+      </section>
 
       <section className="flex flex-col gap-8">
         <div className="flex justify-between">

@@ -66,3 +66,16 @@ export type MusicTrack = z.infer<typeof musicTrack>;
 export const musicTracksSchema = z.object({
   tracks: z.array(musicTrack),
 });
+
+const travelLocation = z.object({
+  id: z.number(),
+  city: z.string(),
+  country: z.string(),
+  coordinates: z.tuple([z.number(), z.number()]),
+  current: z.boolean().optional(),
+});
+export type TravelLocation = z.infer<typeof travelLocation>;
+
+export const travelsSchema = z.object({
+  travels: z.array(travelLocation),
+});
