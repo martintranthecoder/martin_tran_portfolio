@@ -1,10 +1,12 @@
 import Experience from "@/components/Experience";
+import JellyfishText from "@/components/JellyfishText";
 import LinkWithIcon from "@/components/LinkWithIcon";
 import Projects from "@/components/Projects";
 import Socials from "@/components/Socials";
 import SpotifyTopTracks from "@/components/SpotifyTopTracks";
 import SwipeCards from "@/components/SwipeCards";
 import TravelMap from "@/components/TravelMap";
+import TextType from "@/components/TextType";
 import { featureFlags } from "@/lib/featureFlags";
 import { Button } from "@/components/ui/Button";
 import {
@@ -26,7 +28,15 @@ export default function Home() {
 
         <div className="flex max-w-[320px] flex-col sm:max-w-full">
           <h1 className="title text-balance text-4xl sm:text-5xl">
-            {homeContent.introduction.greeting}
+            <TextType
+              text={[homeContent.introduction.greeting]}
+              typingSpeed={75}
+              pauseDuration={5000}
+              showCursor
+              cursorCharacter="_"
+              deletingSpeed={50}
+              loop
+            />
           </h1>
 
           <div className="mt-4 max-w-sm text-balance text-sm sm:text-base space-y-2">
@@ -44,6 +54,9 @@ export default function Home() {
                 </span>
               ))}
               .
+            </p>
+            <p>
+              Most importantly, I love <JellyfishText />.
             </p>
             <p className="text-muted-foreground">
               {homeContent.introduction.description.greeting}

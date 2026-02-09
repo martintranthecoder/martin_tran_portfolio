@@ -83,7 +83,7 @@ const FloatingJellyfish: React.FC<FloatingJellyfishProps> = ({
       `}</style>
       <div 
         ref={containerRef}
-        className="fixed inset-0 pointer-events-none z-0 overflow-hidden"
+        className="fixed inset-0 pointer-events-none z-50 overflow-hidden"
         aria-hidden="true"
       />
     </>

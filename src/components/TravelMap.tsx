@@ -7,32 +7,34 @@ import {
   Marker,
   ZoomableGroup,
 } from "react-simple-maps";
-import { useState } from "react";
+import { useState, useCallback } from "react";
 import { travelsSchema, TravelLocation } from "@/lib/schemas";
 import travelsData from "@/data/travels.json";
 
-// Higher resolution map with better country definition
-const geoUrl = "https://cdn.jsdelivr.net/npm/world-atlas@2/countries-50m.json";
-
+const GEO_URL = "https://cdn.jsdelivr.net/npm/world-atlas@2/countries-50m.json";
 const { travels } = travelsSchema.parse(travelsData);
 
+const geoStyle = {
+  default: { outline: "none" },
+  hover: { outline: "none", fill: "#a3a3a3" },
+  pressed: { outline: "none" },
+};
+
 export default function TravelMap() {
-  const [hoveredLocation, setHoveredLocation] = useState<TravelLocation | null>(
-    null
-  );
+  const [hoveredLocation, setHoveredLocation] = useState<TravelLocation | null>(null);
+
+  const handleMouseEnter = useCallback((location: TravelLocation) => () => setHoveredLocation(location), []);
+  const handleMouseLeave = useCallback(() => setHoveredLocation(null), []);
 
   return (
     <div className="relative w-full">
       <div className="overflow-hidden rounded-lg border border-border bg-gradient-to-b from-sky-100 to-sky-200 dark:from-slate-900 dark:to-slate-800">
         <ComposableMap
-          projectionConfig={{
-            scale: 147,
-            center: [0, 20],
-          }}
+          projectionConfig={{ scale: 147, center: [0, 20] }}
           className="h-[300px] w-full sm:h-[400px]"
         >
           <ZoomableGroup>
-            <Geographies geography={geoUrl}>
+            <Geographies geography={GEO_URL}>
               {({ geographies }) =>
                 geographies.map((geo) => (
                   <Geography
@@ -42,51 +44,33 @@ export default function TravelMap() {
                     stroke="#a3a3a3"
                     strokeWidth={0.5}
                     className="dark:fill-neutral-700 dark:stroke-neutral-600"
-                    style={{
-                      default: { outline: "none" },
-                      hover: {
-                        outline: "none",
-                        fill: "#a3a3a3",
-                      },
-                      pressed: { outline: "none" },
-                    }}
+                    style={geoStyle}
                   />
                 ))
               }
             </Geographies>
-            {travels.map((location) => (
-              <Marker
-                key={location.id}
-                coordinates={location.coordinates}
-                onMouseEnter={() => setHoveredLocation(location)}
-                onMouseLeave={() => setHoveredLocation(null)}
-              >
-                {location.current ? (
-                  <>
-                    <circle
-                      r={5}
-                      fill="rgba(34, 197, 94, 0.4)"
-                      className="animate-ping"
-                    />
-                    <circle
-                      r={3.5}
-                      fill="#22c55e"
-                      stroke="#ffffff"
-                      strokeWidth={1.5}
-                      className="cursor-pointer"
-                    />
-                  </>
-                ) : (
+            {travels.map((location) => {
+              const isCurrent = location.current;
+              return (
+                <Marker
+                  key={location.id}
+                  coordinates={location.coordinates}
+                  onMouseEnter={handleMouseEnter(location)}
+                  onMouseLeave={handleMouseLeave}
+                >
+                  {isCurrent && (
+                    <circle r={2.5} fill="rgba(34, 197, 94, 0.4)" className="animate-ping" />
+                  )}
                   <circle
-                    r={2.5}
-                    fill="#ef4444"
+                    r={1.5}
+                    fill={isCurrent ? "#22c55e" : "#ef4444"}
                     stroke="#ffffff"
-                    strokeWidth={1}
-                    className="cursor-pointer transition-transform hover:scale-150"
+                    strokeWidth={0.5}
+                    className={`cursor-pointer ${!isCurrent ? "transition-transform hover:scale-150" : ""}`}
                   />
-                )}
-              </Marker>
-            ))}
+                </Marker>
+              );
+            })}
           </ZoomableGroup>
         </ComposableMap>
       </div>

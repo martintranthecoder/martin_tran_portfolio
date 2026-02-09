@@ -1,8 +1,8 @@
 {
   "introduction": {
-    "greeting": "hi, i'm martin tran 👋",
+    "greeting": "hi, i'm martin tran",
     "description": {
-      "title": "Software Engineer at Amazon Web Services (AWS) and a SJSU alumni.", 
+      "title": "Software Dev Engineer at Amazon Web Services (AWS) and a SJSU alumni.", 
       "interest": "My interest areas are", 
       "areas": ["Distributed Systems", "Infrastructure", "Backend Development", "Operating Systems", "Data Engineering"],
       "greeting": "Nice to meet you all."

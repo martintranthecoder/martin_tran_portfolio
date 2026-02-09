@@ -77,10 +77,34 @@ const config: Config = {
             height: "0",
           },
         },
+        "jellyfish-glow": {
+          "0%, 100%": {
+            textShadow: "0 0 4px rgba(96, 165, 250, 0.4), 0 0 8px rgba(96, 165, 250, 0.3), 0 0 12px rgba(96, 165, 250, 0.2)",
+          },
+          "50%": {
+            textShadow: "0 0 8px rgba(96, 165, 250, 0.8), 0 0 16px rgba(96, 165, 250, 0.6), 0 0 24px rgba(96, 165, 250, 0.4), 0 0 32px rgba(147, 197, 253, 0.3)",
+          },
+        },
+        "float-away": {
+          "0%": {
+            transform: "translateX(-50%) translateY(0) scale(1)",
+            opacity: "1",
+          },
+          "50%": {
+            transform: "translateX(-30%) translateY(-40px) scale(1.3)",
+            opacity: "1",
+          },
+          "100%": {
+            transform: "translateX(-70%) translateY(-100px) scale(1.5)",
+            opacity: "0",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "jellyfish-glow": "jellyfish-glow 10s ease-in-out infinite",
+        "float-away": "float-away 1.2s ease-out forwards",
       },
     },
   },
