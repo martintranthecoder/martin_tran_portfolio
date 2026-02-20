@@ -21,21 +21,8 @@ const calistoga = Calistoga({
 });
 
 export const metadata: Metadata = {
-  title: "Martin Tran - Portfolio",
+  title: "Martin Tran",
   description: "Martin Tran's portfolio - Software Developer at AWS",
-  keywords: [
-    "Martin Tran",
-    "Software Engineer",
-    "AWS",
-    "Amazon Web Services",
-    "SJSU",
-    "San Jose State University",
-    "portfolio",
-    "backend developer",
-    "distributed systems",
-    "infrastructure",
-    "data engineering",
-  ],
   icons: {
     icon: [
       { url: "/favicon.ico" },
