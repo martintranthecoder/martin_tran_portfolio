@@ -21,10 +21,8 @@ const calistoga = Calistoga({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://martintran.work"),
-  title: "Martin Tran - Software Engineer",
-  description:
-    "Martin Tran is a Software Development Engineer at Amazon Web Services (AWS) and a San Jose State University alumni with expertise in distributed systems, infrastructure, backend development, and data engineering.",
+  title: "Martin Tran - Portfolio",
+  description: "Martin Tran's portfolio - Software Developer at AWS",
   keywords: [
     "Martin Tran",
     "Software Engineer",
@@ -38,30 +36,6 @@ export const metadata: Metadata = {
     "infrastructure",
     "data engineering",
   ],
-  authors: [{ name: "Martin Tran", url: "https://martintran.work" }],
-  openGraph: {
-    type: "website",
-    url: "https://martintran.work",
-    siteName: "Martin Tran",
-    title: "Martin Tran - Software Engineer",
-    description:
-      "Software Development Engineer at AWS. SJSU alumni specializing in distributed systems, infrastructure, and backend development.",
-    images: [
-      {
-        url: "/img/martin-portfolio.png",
-        width: 1200,
-        height: 630,
-        alt: "Martin Tran Portfolio",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Martin Tran - Software Engineer",
-    description:
-      "Software Development Engineer at AWS. SJSU alumni specializing in distributed systems, infrastructure, and backend development.",
-    images: ["/img/martin-portfolio.png"],
-  },
   icons: {
     icon: [
       { url: "/favicon.ico" },
