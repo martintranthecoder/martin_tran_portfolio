@@ -17,7 +17,7 @@ export default function SpotifyTrackCard({
   if (isFeatured) {
     // Featured Track #1 - Large vertical layout
     return (
-      <Card className="overflow-hidden h-full flex flex-col">
+      <Card className="overflow-hidden h-full flex flex-col hover:bg-accent/50 transition-colors">
         <CardContent className="p-6 flex flex-col flex-1">
           {/* Large Album Artwork */}
           <div className="relative w-full flex-1 rounded-lg overflow-hidden mb-4 min-h-0">
@@ -90,10 +90,10 @@ export default function SpotifyTrackCard({
             </span>
             <button
               onClick={() => window.open(track.url, "_blank")}
-              className="rounded-full p-2 hover:bg-accent transition-colors"
+              className="rounded-full p-1.5 bg-[#1DB954] hover:bg-[#1ed760] text-white transition-all hover:scale-105"
               aria-label="Play on Spotify"
             >
-              <Play className="size-4 fill-current" />
+              <Play className="size-3 fill-current" />
             </button>
           </div>
         </div>

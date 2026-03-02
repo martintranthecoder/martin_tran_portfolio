@@ -7,7 +7,6 @@ import SpotifyTopTracks from "@/components/SpotifyTopTracks";
 import SwipeCards from "@/components/SwipeCards";
 import TravelMap from "@/components/TravelMap";
 import TextType from "@/components/TextType";
-import { featureFlags } from "@/lib/featureFlags";
 import { Button } from "@/components/ui/Button";
 import {
   ArrowRightIcon,
@@ -108,12 +107,10 @@ export default function Home() {
         <Projects limit={LIMIT} />
       </section>
 
-      {featureFlags.spotify && (
-        <section className="flex flex-col gap-8">
-          <h2 className="title text-2xl sm:text-3xl">now playing</h2>
-          <SpotifyTopTracks />
-        </section>
-      )}
+      <section className="flex flex-col gap-8">
+        <h2 className="title text-2xl sm:text-3xl">top tracks</h2>
+        <SpotifyTopTracks />
+      </section>
 
     </article>
   );
