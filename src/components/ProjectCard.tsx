@@ -45,7 +45,17 @@ export function ProjectCard({ project }: Props) {
             <statusInfo.icon className="size-4" />
           </div>
         )}
-        <Link href={href || projectImage}>
+        {href ? (
+          <Link href={href}>
+            <Image
+              src={projectImage}
+              alt={name}
+              width={500}
+              height={300}
+              className="h-40 w-full object-cover object-top"
+            />
+          </Link>
+        ) : (
           <Image
             src={projectImage}
             alt={name}
@@ -53,7 +63,7 @@ export function ProjectCard({ project }: Props) {
             height={300}
             className="h-40 w-full object-cover object-top"
           />
-        </Link>
+        )}
       </CardHeader>
       <CardContent className="flex flex-col gap-2">
         <CardTitle>{name}</CardTitle>
