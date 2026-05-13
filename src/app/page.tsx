@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import Experience from "@/components/Experience";
 import JellyfishText from "@/components/JellyfishText";
 import LinkWithIcon from "@/components/LinkWithIcon";
@@ -16,7 +17,24 @@ import Link from "next/link";
 
 import homeContent from "@/data/home.json";
 
+export const revalidate = 3600;
+
 const LIMIT = 2; // max show 2
+
+function SpotifyTopTracksFallback() {
+  return (
+    <div className="flex flex-col md:flex-row gap-4">
+      <div className="md:w-[45%] flex-shrink-0">
+        <div className="aspect-square w-full animate-pulse rounded-lg bg-muted" />
+      </div>
+      <div className="flex-1 flex flex-col gap-3">
+        {Array.from({ length: 4 }).map((_, i) => (
+          <div key={i} className="h-16 animate-pulse rounded-lg bg-muted" />
+        ))}
+      </div>
+    </div>
+  );
+}
 
 export default function Home() {
 
@@ -109,7 +127,9 @@ export default function Home() {
 
       <section className="flex flex-col gap-8">
         <h2 className="title text-2xl sm:text-3xl">top tracks</h2>
-        <SpotifyTopTracks />
+        <Suspense fallback={<SpotifyTopTracksFallback />}>
+          <SpotifyTopTracks />
+        </Suspense>
       </section>
 
     </article>

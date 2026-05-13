@@ -1,9 +1,6 @@
 import { getTopTracks } from "@/lib/spotify";
 import SpotifyTrackCard from "./SpotifyTrackCard";
 
-// Revalidate every hour
-export const revalidate = 3600;
-
 export default async function SpotifyTopTracks() {
   const tracks = await getTopTracks();
 

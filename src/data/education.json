@@ -22,22 +22,6 @@
           ]
         }
       ]
-    },
-    {
-      "name": "De Anza College",
-      "href": "https://www.deanza.edu",
-      "logo": "/img/de-anza.jpeg",
-      "positions": [
-        {
-          "title": "Associate of Science in Computer Science",
-          "start": "Jan 2022",
-          "end": "Jun 2023",
-          "description": [
-            "Grade: 3.82",
-            "Activities: De Anza Student Government (DASG) Officer"
-          ]
-        }
-      ]
     }
   ]
 }

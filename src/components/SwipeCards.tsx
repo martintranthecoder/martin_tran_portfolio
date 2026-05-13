@@ -108,9 +108,10 @@ const Card = ({
         src={url}
         alt="Martin Tran"
         fill
+        sizes="175px"
         className="object-cover pointer-events-none"
         quality={95}
-        priority={isFront}
+        priority
         draggable={false}
       />
     </motion.div>
