@@ -61,16 +61,31 @@ export default function Home() {
             <p>{homeContent.introduction.description.title}</p>
             <p>
               {homeContent.introduction.description.interest}{" "}
-              {homeContent.introduction.description.areas.map((area, index) => (
-                <span key={area}>
-                  <span className="font-semibold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-                    {area}
+              {homeContent.introduction.description.areas.map((area, index) => {
+                const dotColors = [
+                  "hsl(var(--chart-1))",
+                  "hsl(var(--chart-2))",
+                  "hsl(var(--chart-4))",
+                  "hsl(var(--chart-5))",
+                  "hsl(var(--chart-3))",
+                ];
+                const rotations = ["-1deg", "0.6deg", "-0.4deg", "0.8deg", "-0.7deg"];
+                return (
+                  <span key={area}>
+                    <span
+                      className="group/pill inline-flex items-center gap-1.5 whitespace-nowrap rounded-full border border-border/60 bg-muted/60 px-2.5 py-0.5 font-mono text-[0.78em] leading-normal text-foreground shadow-[0_1px_2px_rgba(0,0,0,0.04)] transition-all duration-300 ease-out rotate-[var(--r)] hover:-translate-y-0.5 hover:rotate-0 hover:border-foreground/35 hover:bg-muted hover:shadow-[0_4px_10px_-2px_rgba(0,0,0,0.10)]"
+                      style={{ ["--r" as string]: rotations[index] ?? "0deg" }}
+                    >
+                      <span
+                        className="size-1.5 rounded-full transition-transform duration-300 ease-out group-hover/pill:scale-150"
+                        style={{ backgroundColor: dotColors[index % dotColors.length] }}
+                      />
+                      {area}
+                    </span>
+                    {index < homeContent.introduction.description.areas.length - 1 && " "}
                   </span>
-                  {index < homeContent.introduction.description.areas.length - 1 && (
-                    <span>{index === homeContent.introduction.description.areas.length - 2 ? " & " : ", "}</span>
-                  )}
-                </span>
-              ))}
+                );
+              })}
               .
             </p>
             <p>

@@ -12,7 +12,7 @@ export default function JellyfishText() {
     // Reset after animation completes
     setTimeout(() => {
       setIsFloating(false);
-    }, 1500);
+    }, 1900);
   };
 
   return (

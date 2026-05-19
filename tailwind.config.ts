@@ -87,16 +87,33 @@ const config: Config = {
         },
         "float-away": {
           "0%": {
-            transform: "translateX(-50%) translateY(0) scale(1)",
+            transform: "translateX(-50%) translateY(0) scale(1) rotate(0deg)",
             opacity: "1",
+            filter: "drop-shadow(0 0 6px rgba(96, 165, 250, 0.55))",
           },
-          "50%": {
-            transform: "translateX(-30%) translateY(-40px) scale(1.3)",
+          "20%": {
+            transform:
+              "translateX(-38%) translateY(-26px) scale(1.12) rotate(-9deg)",
             opacity: "1",
+            filter: "drop-shadow(0 0 10px rgba(96, 165, 250, 0.6))",
+          },
+          "45%": {
+            transform:
+              "translateX(-66%) translateY(-58px) scale(1.26) rotate(7deg)",
+            opacity: "1",
+            filter: "drop-shadow(0 0 12px rgba(147, 197, 253, 0.55))",
+          },
+          "70%": {
+            transform:
+              "translateX(-42%) translateY(-94px) scale(1.4) rotate(-4deg)",
+            opacity: "0.8",
+            filter: "drop-shadow(0 0 14px rgba(147, 197, 253, 0.4))",
           },
           "100%": {
-            transform: "translateX(-70%) translateY(-100px) scale(1.5)",
+            transform:
+              "translateX(-58%) translateY(-140px) scale(1.55) rotate(2deg)",
             opacity: "0",
+            filter: "drop-shadow(0 0 16px rgba(147, 197, 253, 0))",
           },
         },
       },
@@ -104,7 +121,7 @@ const config: Config = {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "jellyfish-glow": "jellyfish-glow 10s ease-in-out infinite",
-        "float-away": "float-away 1.2s ease-out forwards",
+        "float-away": "float-away 1.8s cubic-bezier(0.22, 1, 0.36, 1) forwards",
       },
     },
   },

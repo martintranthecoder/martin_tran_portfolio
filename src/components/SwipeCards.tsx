@@ -90,7 +90,7 @@ const Card = ({
 
   return (
     <motion.div
-      className="absolute h-[233px] w-[175px] origin-bottom rounded-lg overflow-hidden hover:cursor-grab active:cursor-grabbing"
+      className="absolute h-[233px] w-[175px] origin-bottom hover:cursor-grab active:cursor-grabbing"
       style={{
         gridRow: 1,
         gridColumn: 1,
@@ -98,9 +98,6 @@ const Card = ({
         opacity,
         rotate,
         perspective: 1000,
-        boxShadow: isFront
-          ? "0 10px 15px -3px rgb(0 0 0 / 0.3), 0 4px 6px -4px rgb(0 0 0 / 0.3)"
-          : undefined,
       }}
       animate={{
         scale: isFront ? 1 : 0.98,
@@ -131,11 +128,16 @@ const Card = ({
       }}
     >
       <motion.div
-        className="relative h-full w-full [transform-style:preserve-3d]"
+        className="relative h-full w-full [transform-style:preserve-3d] rounded-lg"
+        style={{
+          boxShadow: isFront
+            ? "0 10px 15px -3px rgb(0 0 0 / 0.3), 0 4px 6px -4px rgb(0 0 0 / 0.3)"
+            : undefined,
+        }}
         animate={{ rotateY: flipped && !isDragging ? 180 : 0 }}
         transition={{ duration: 0.4 }}
       >
-        <div className="absolute inset-0 [backface-visibility:hidden]">
+        <div className="absolute inset-0 [backface-visibility:hidden] rounded-lg overflow-hidden">
           <Image
             src={url}
             alt={title}
@@ -148,7 +150,7 @@ const Card = ({
           />
         </div>
 
-        <div className="absolute inset-0 [backface-visibility:hidden] [transform:rotateY(180deg)] flex flex-col justify-center items-center text-center gap-2 p-4 bg-card text-card-foreground border border-border rounded-lg">
+        <div className="absolute inset-0 [backface-visibility:hidden] [transform:rotateY(180deg)] flex flex-col justify-center items-center text-center gap-2 p-4 bg-secondary text-secondary-foreground border border-border rounded-lg">
           <p className="text-xs text-muted-foreground leading-snug">{date}</p>
           <h3 className="text-sm font-semibold leading-tight">{title}</h3>
           <p className="text-xs text-muted-foreground leading-snug">
