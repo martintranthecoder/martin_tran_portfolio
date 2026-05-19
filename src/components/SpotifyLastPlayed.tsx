@@ -26,9 +26,9 @@ export default async function SpotifyLastPlayed() {
       className="group block"
       aria-label={`Open ${track.name} by ${track.artist} on Spotify`}
     >
-      <div className="relative rounded-md border border-yellow-400/70 bg-zinc-950 px-6 pb-6 pt-8 font-mono text-zinc-200 transition-colors group-hover:border-yellow-300">
+      <div className="relative rounded-md border border-blue-500/70 bg-background px-6 pb-6 pt-8 font-mono text-foreground transition-colors group-hover:border-blue-400 dark:border-yellow-400/70 dark:group-hover:border-yellow-300">
         {/* notch label */}
-        <span className="absolute -top-2.5 left-4 bg-zinc-950 px-2 text-xs font-bold text-yellow-400">
+        <span className="absolute -top-2.5 left-4 bg-background px-2 text-xs font-bold text-blue-600 dark:text-yellow-400">
           last played
         </span>
 
@@ -46,35 +46,35 @@ export default async function SpotifyLastPlayed() {
 
           {/* Stats column */}
           <div className="flex-1 min-w-0">
-            <h3 className="mb-3 truncate text-lg font-bold text-zinc-100">
+            <h3 className="mb-3 truncate text-lg font-bold text-foreground">
               {track.name}
             </h3>
 
             <dl className="grid grid-cols-[auto_1fr] gap-x-6 gap-y-1 text-sm">
-              <dt className="text-zinc-400">artist</dt>
-              <dd className="truncate text-right font-bold text-yellow-400">
+              <dt className="text-muted-foreground">artist</dt>
+              <dd className="truncate text-right font-bold text-blue-600 dark:text-yellow-400">
                 {track.artist}
               </dd>
 
-              <dt className="text-zinc-400">album</dt>
-              <dd className="truncate text-right font-bold text-emerald-400">
+              <dt className="text-muted-foreground">album</dt>
+              <dd className="truncate text-right font-bold text-emerald-600 dark:text-emerald-400">
                 {track.album}
               </dd>
 
-              <dt className="text-zinc-400">duration</dt>
-              <dd className="text-right font-bold text-zinc-100">
+              <dt className="text-muted-foreground">duration</dt>
+              <dd className="text-right font-bold text-foreground">
                 {track.duration}
               </dd>
 
-              <dt className="text-zinc-400">played</dt>
-              <dd className="text-right font-bold text-zinc-100">
+              <dt className="text-muted-foreground">played</dt>
+              <dd className="text-right font-bold text-foreground">
                 {timeAgo(track.playedAt)}
               </dd>
             </dl>
 
-            <div className="mt-5 flex gap-6 text-xs text-zinc-500">
+            <div className="mt-5 flex gap-6 text-xs text-muted-foreground">
               <span>
-                <span className="text-zinc-400">click</span> open in spotify
+                <span className="text-foreground/70">click</span> open in spotify
               </span>
             </div>
           </div>
