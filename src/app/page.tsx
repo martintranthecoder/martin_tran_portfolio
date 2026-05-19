@@ -4,6 +4,7 @@ import JellyfishText from "@/components/JellyfishText";
 import LinkWithIcon from "@/components/LinkWithIcon";
 import Projects from "@/components/Projects";
 import Socials from "@/components/Socials";
+import SpotifyLastPlayed from "@/components/SpotifyLastPlayed";
 import SpotifyTopTracks from "@/components/SpotifyTopTracks";
 import SwipeCards from "@/components/SwipeCards";
 import TravelMap from "@/components/TravelMap";
@@ -129,6 +130,9 @@ export default function Home() {
         <h2 className="title text-2xl sm:text-3xl">top tracks</h2>
         <Suspense fallback={<SpotifyTopTracksFallback />}>
           <SpotifyTopTracks />
+        </Suspense>
+        <Suspense fallback={null}>
+          <SpotifyLastPlayed />
         </Suspense>
       </section>
 

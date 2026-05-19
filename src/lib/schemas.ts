@@ -67,6 +67,13 @@ export const musicTracksSchema = z.object({
   tracks: z.array(musicTrack),
 });
 
+const lastPlayedTrack = musicTrack.extend({
+  album: z.string(),
+  playedAt: z.string(),
+});
+export type LastPlayedTrack = z.infer<typeof lastPlayedTrack>;
+export const lastPlayedTrackSchema = lastPlayedTrack;
+
 const travelLocation = z.object({
   id: z.number(),
   city: z.string(),

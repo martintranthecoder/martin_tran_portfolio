@@ -6,14 +6,14 @@
       "logo": "/img/aws.png",
       "positions": [
         {
-          "title": "Software Engineer",
-          "start": "Jul 2026",
+          "title": "Software Development Engineer",
+          "start": "Aug 2026",
           "description": [
             "incoming..."
           ]
         },
         {
-          "title": "Software Engineer Intern",
+          "title": "Software Development Engineer Intern",
           "start": "May 2025",
           "end": "Aug 2025",
           "description": [
@@ -32,7 +32,7 @@
       "logo": "/img/peer_connections_logo.png",
       "positions": [
         {
-          "title": "Embedded Tutor",
+          "title": "Embedded Tutor - CS 149: Operating Systems",
           "start": "Aug 2025",
           "description": [
             "Supporting in-class lecture for CS 149 by circulating during classes, assisting students with questions on challenging operating system concepts",
@@ -42,7 +42,7 @@
           ]
         },
         {
-          "title": "Learning Assistant",
+          "title": "Learning Assistant - PHYS 50: Mechanics",
           "start": "Jan 2025",
           "end": "June 2022",
           "description": [
