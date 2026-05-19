@@ -3,7 +3,7 @@
     {
       "name": "Reinforcement-Learning-based CAPTCHA System",
       "description": "Trying to break current systems using reinforcement learning techniques and proposing a novel CAPTCHA system that adapts to user behavior using both classfication and reinforcement learning models to detect bots.",
-      "status": "In Development",
+      "status": "Completed",
       "image": "/img/captcha.png",
       "tags": [
         "React",
@@ -15,14 +15,14 @@
       ],
       "links": [
         {
-          "name": "Website",
-          "href": "https://example.com",
-          "icon": "globe"
+          "name": "Source",
+          "href": "https://github.com/meghanai28/adaptive-captcha-defense",
+          "icon": "github"
         },
         {
-          "name": "Source",
-          "href": "https://github.com/martintran/project1",
-          "icon": "github"
+          "name": "Paper",
+          "href": "https://www.preprints.org/manuscript/202604.1178",
+          "icon": "file-text"
         }
       ]
     },
@@ -81,18 +81,20 @@
     {
       "name": "MonkeyType CLI",
       "description": "CLI version of MonkeyType, a popular typing test application",
-      "status": "In Development",
-      "image": "",
+      "status": "Completed",
+      "image": "/img/monkey_type_cli.png",
       "tags": [
         "Rust",
         "rataui",
         "CLI",
-        "Terminal"
+        "Terminal",
+        "crossterm",
+        "chrono"
       ],
       "links": [
         {
           "name": "Source",
-          "href": "https://github.com/martintran/project1",
+          "href": "https://github.com/martintranthecoder/monkey_type",
           "icon": "github"
         }
       ]
