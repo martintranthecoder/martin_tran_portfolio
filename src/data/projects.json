@@ -1,7 +1,7 @@
 {
   "projects": [
     {
-      "name": "Reinforcement-Learning-based CAPTCHA System",
+      "name": "Designing CAPTCHA Systems with Reinforcement Learning for Adaptive Defense",
       "description": "Trying to break current systems using reinforcement learning techniques and proposing a novel CAPTCHA system that adapts to user behavior using both classfication and reinforcement learning models to detect bots.",
       "status": "Completed",
       "image": "/img/captcha.png",
@@ -21,7 +21,7 @@
         },
         {
           "name": "Paper",
-          "href": "https://www.preprints.org/manuscript/202604.1178",
+          "href": "https://www.mdpi.com/2079-9292/15/11/2363",
           "icon": "file-text"
         }
       ]

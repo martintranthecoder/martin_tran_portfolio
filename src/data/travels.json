@@ -33,102 +33,114 @@
     },
     {
       "id": 6,
+      "city": "Chicago",
+      "country": "USA",
+      "coordinates": [-87.6298, 41.8781]
+    },
+    {
+      "id": 7,
+      "city": "New York City",
+      "country": "USA",
+      "coordinates": [-74.0060, 40.7128]
+    },
+    {
+      "id": 8,
       "city": "Tokyo",
       "country": "Japan",
       "coordinates": [139.6917, 35.6895]
     },
     {
-      "id": 7,
+      "id": 9,
       "city": "Kyoto",
       "country": "Japan",
       "coordinates": [135.7681, 35.0116]
     },
     {
-      "id": 8,
+      "id": 10,
       "city": "Shizuoka",
       "country": "Japan",
       "coordinates": [138.3831, 34.9756]
     },
     {
-      "id": 9,
+      "id": 11,
       "city": "Seoul",
       "country": "South Korea",
       "coordinates": [126.9780, 37.5665]
     },
     {
-      "id": 10,
+      "id": 12,
       "city": "Jeju",
       "country": "South Korea",
       "coordinates": [126.5312, 33.4996]
     },
     {
-      "id": 11,
+      "id": 13,
       "city": "Taipei",
       "country": "Taiwan",
       "coordinates": [121.5654, 25.0330]
     },
     {
-      "id": 12,
+      "id": 14,
       "city": "Ho Chi Minh City",
       "country": "Vietnam",
       "coordinates": [106.6297, 10.8231]
     },
     {
-      "id": 13,
+      "id": 15,
       "city": "Hanoi",
       "country": "Vietnam",
       "coordinates": [105.8342, 21.0278]
     },
     {
-      "id": 14,
+      "id": 16,
       "city": "Da Nang",
       "country": "Vietnam",
       "coordinates": [108.2022, 16.0544]
     },
     {
-      "id": 15,
+      "id": 17,
       "city": "Bangkok",
       "country": "Thailand",
       "coordinates": [100.5018, 13.7563]
     },
     {
-      "id": 16,
+      "id": 18,
       "city": "Singapore",
       "country": "Singapore",
       "coordinates": [103.8198, 1.3521]
     },
     {
-      "id": 17,
+      "id": 19,
       "city": "Kuala Lumpur",
       "country": "Malaysia",
       "coordinates": [101.6869, 3.1390]
     },
     {
-      "id": 18,
+      "id": 20,
       "city": "George Town",
       "country": "Malaysia",
       "coordinates": [100.3327, 5.4141]
     },
     {
-      "id": 19,
+      "id": 21,
       "city": "Cebu",
       "country": "Philippines",
       "coordinates": [123.8854, 10.3157]
     },
     {
-      "id": 20,
+      "id": 22,
       "city": "El Nido",
       "country": "Philippines",
       "coordinates": [119.3925, 11.1940]
     },
     {
-      "id": 21,
+      "id": 23,
       "city": "Coron",
       "country": "Philippines",
       "coordinates": [120.2043, 11.9986]
     },
     {
-      "id": 22,
+      "id": 24,
       "city": "Palawan",
       "country": "Philippines",
       "coordinates": [118.7356, 9.8500]
