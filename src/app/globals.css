@@ -81,6 +81,14 @@
   body {
     @apply bg-background text-foreground;
   }
+  /* Let the DitherWave canvas (fixed, -z-10) show through in both themes.
+     Both html and body must be transparent, otherwise their solid background
+     paints over the canvas. The canvas carries its own per-theme base color
+     so there's no flash before WebGL paints. */
+  html,
+  body {
+    background-color: transparent;
+  }
   .title {
     @apply font-serif text-5xl tracking-wide decoration-border/75 decoration-2;
   }

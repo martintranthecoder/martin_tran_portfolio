@@ -14,9 +14,9 @@ const navLinks = routesData.routes
 
 export default function Header() {
   return (
-    <header className="sticky top-0 z-50 bg-background/75 backdrop-blur-sm">
+    <header className="sticky top-0 z-50 bg-transparent">
       <div className="mx-auto max-w-3xl px-8 py-6">
-        <nav className="flex items-center justify-between">
+        <nav className="flex items-center justify-between rounded-full border border-border/40 bg-background/50 px-5 py-3 shadow-lg backdrop-blur-lg backdrop-saturate-150 dark:bg-background/30">
           <ul className="flex gap-4 sm:gap-8">
             {navLinks.map((nav, id) => (
               <li key={id} className="link">

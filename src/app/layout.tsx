@@ -3,7 +3,9 @@ import GoogleAnalytics from "@/components/GoogleAnalytics";
 import Header from "@/components/Header";
 import Providers from "@/components/Providers";
 import ClickSpark from "@/components/ui/ClickSpark";
+import DitherWave from "@/components/ui/DitherWave";
 import FloatingJellyfish from "@/components/ui/FloatingJellyfish";
+import JellyfishFactPopup from "@/components/ui/JellyfishFactPopup";
 import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
 import { Calistoga, Inter } from "next/font/google";
@@ -49,7 +51,9 @@ export default function RootLayout({
       >
         <GoogleAnalytics />
         <Providers>
+          <DitherWave />
           <FloatingJellyfish />
+          <JellyfishFactPopup />
           <ClickSpark
             sparkColor="#fff"
             sparkSize={10}

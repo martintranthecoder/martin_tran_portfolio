@@ -8,7 +8,7 @@ interface Props {
 
 export default function Timeline({ experience }: Props) {
   return (
-    <Card>
+    <Card className="bg-card/50 backdrop-blur-md dark:bg-card/40">
       <CardContent className="p-0">
         <ul className="ml-10 border-l">
           {experience.map((exp, id) => (

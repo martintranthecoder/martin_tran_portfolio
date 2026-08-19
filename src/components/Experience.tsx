@@ -10,9 +10,19 @@ export default function Experience() {
 
   return (
     <Tabs defaultValue="work">
-      <TabsList className="mb-2 grid w-full grid-cols-2">
-        <TabsTrigger value="work">Work</TabsTrigger>
-        <TabsTrigger value="education">Education</TabsTrigger>
+      <TabsList className="mb-2 grid w-full grid-cols-2 bg-muted/50 backdrop-blur-md dark:bg-muted/40">
+        <TabsTrigger
+          value="work"
+          className="data-[state=active]:bg-background/60 data-[state=active]:backdrop-blur-md dark:data-[state=active]:bg-background/50"
+        >
+          Work
+        </TabsTrigger>
+        <TabsTrigger
+          value="education"
+          className="data-[state=active]:bg-background/60 data-[state=active]:backdrop-blur-md dark:data-[state=active]:bg-background/50"
+        >
+          Education
+        </TabsTrigger>
       </TabsList>
       <TabsContent value="work">
         <Timeline experience={career}></Timeline>

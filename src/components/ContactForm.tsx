@@ -93,6 +93,7 @@ export default function ContactForm() {
               type="text"
               placeholder="Name"
               autoComplete="given-name"
+              className="bg-background"
               {...register("name")}
             />
 
@@ -108,6 +109,7 @@ export default function ContactForm() {
               type="email"
               placeholder="Email"
               autoComplete="email"
+              className="bg-background"
               {...register("email")}
             />
 
@@ -122,7 +124,7 @@ export default function ContactForm() {
               rows={4}
               placeholder="Leave feedback about the site, career opportunities or just to say hello etc."
               autoComplete="Message"
-              className="resize-none"
+              className="resize-none bg-background"
               {...register("message")}
             />
 
